@@ -1,14 +1,25 @@
-import React from 'react';
-import { Story, Meta } from '@storybook/react';
+import React from "react";
+import { Story, Meta } from "@storybook/react";
 
-import { Todo } from '.';
+import { Todo } from ".";
 
 export default {
-  title: 'how to eat an elephant/todo',
-  component: Todo,
+    title: "how to eat an elephant/todo",
+    component: Todo,
 } as Meta;
 
-const Template: Story = (args) => <Todo {...args} />;
+const Template: Story = (args) => (
+    <div
+        style={{
+            backgroundColor: "#e4e4e4",
+            width: "100%",
+            height: "100%",
+            padding: "50px",
+        }}
+    >
+        <Todo {...args} />
+    </div>
+);
 
 export const SomeItemsWithoutEdit = Template.bind({});
 SomeItemsWithoutEdit.args = {};

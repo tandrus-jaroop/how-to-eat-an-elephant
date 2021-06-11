@@ -5,37 +5,56 @@ import "./index.css";
  */
 export const Todo = () => {
     return (
-        <div>
-            <h2>todo list</h2>
-            <div>
-                <h3>add item</h3>
-                <input />
-                <button>add</button>
+        <div className="todo">
+            <h2 className="todo__feature-title">todo list</h2>
+            <div className="todo__add-item-section">
+                <h3 className="todo__add-item-title">add item</h3>
+                <p className="todo__add-item-input-group">
+                    <input type="text" />
+                    <button>add</button>
+                </p>
             </div>
-            <div>
+            <div className="todo__uncomplete-item-section">
                 <h3>todo</h3>
                 <ul>
                     <li>
-                        <input type="checkbox" />
-                        <input type="text" value="Pay Bills" />
-                        <button>Edit</button>
-                        <button>Delete</button>
+                        <input type="checkbox" className="todo__checkbox" />
+                        <input
+                            type="text"
+                            value="Pay Bills"
+                            className="todo__list-label"
+                        />
+                        <div>
+                            <button className="todo__edit-button">edit</button>
+                            <button className="todo__delete-button">delete</button>
+                        </div>
                     </li>
                     <li>
-                        <input type="checkbox" />
-                        <p>Go Shoping</p>
-                        <button>Edit</button>
-                        <button>Delete</button>
+                        <input type="checkbox" className="todo__checkbox" />
+                        <label className="todo__list-label">Go Shoping</label>
+                        <div>
+                            <button className="todo__edit-button">edit</button>
+                            <button className="todo__delete-button">delete</button>
+                        </div>
                     </li>
                 </ul>
             </div>
-            <div>
+            <div className="todo__completed-item-section">
+                <h3>Completed</h3>
                 <ul>
                     <li>
-                        <input type="checkbox" checked />
-                        <p>Go Shoping</p>
-                        <button>Edit</button>
-                        <button>Delete</button>
+                        <input
+                            type="checkbox"
+                            checked
+                            className="todo__checkbox"
+                        />
+                        <label className="todo__list-label todo__list-label--completed">
+                            See the Doctor
+                        </label>
+                        <div>
+                            <button className="todo__edit-button">edit</button>
+                            <button className="todo__delete-button">delete</button>
+                        </div>
                     </li>
                 </ul>
             </div>

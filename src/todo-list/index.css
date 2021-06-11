@@ -1,1 +1,91 @@
-
+.todo {
+    font-family: Lato, sans-serif;
+    width: 400px;
+    margin: 10px auto 100px;
+    background-color: rgb(255, 255, 255);
+    padding: 0px 10px 10px 10px;
+    border-radius: 10px;
+}
+.todo h3 {
+    color: #333;
+    font-weight: 700;
+    font-size: 15px;
+    border-bottom: 2px solid #333;
+    padding: 20px 0 10px;
+    margin: 0;
+    text-transform: uppercase;
+}
+.todo button {
+    background: none;
+    border: 0px;
+    color: #888;
+    font-size: 15px;
+    width: 60px;
+    margin: 10px 0 0;
+    font-family: Lato, sans-serif;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.todo__feature-title {
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 0px;
+}
+.todo__add-item-input-group {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.todo__add-item-input-group input {
+    min-width: 70%;
+}
+.todo input {
+    font-size: 18px;
+    line-height: 18px;
+    height: 18px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 6px;
+    font-family: Lato, sans-serif;
+    color: #888;
+}
+.todo input,
+button {
+    outline: none;
+}
+.todo__add-item-input-group button:hover {
+    color: #0fc57c;
+}
+.todo ul {
+    list-style-type: none;
+    padding: 0;
+}
+.todo li {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+.todo__list-label {
+    width: 248px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.todo__list-label--completed {
+    text-decoration: line-through;
+}
+.todo__checkbox {
+    margin: 0 10px;
+    margin-top: 10px;
+}
+.todo__edit-button:hover {
+    color: #333;
+}
+.todo__delete-button:hover {
+    color: rgb(255, 0, 0);
+}
